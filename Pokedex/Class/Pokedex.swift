@@ -40,7 +40,7 @@ class Pokedex {
                             weight: 0.7,
                             calmFrantic: 0.2,
                             friendly: 0.7,
-                            dogObedient: 0.1)
+                            obedient: 0.1)
     
     let bulldogs = Pokemon(imagePokemon: "https://i.pinimg.com/originals/7f/40/7e/7f407e353da065fe1d5d14761f3551e1.jpg",
                         speed: "Bulldog",
@@ -70,5 +70,4 @@ class Pokedex {
         
         return [retrieversLabrador, germanShepherdDogs, retrieversGolden, frenchBulldogs, bulldogs, beagles, poodles]
     }
-    
 }
