@@ -50,16 +50,16 @@ class MoreInfoViewController: UIViewController {
         pokView?.alpha = 0
         lblText?.alpha = 0
         
-        UIView.animate(withDuration: 1.0, delay: 0, options: [], animations: {[weak self] in
+        UIView.animate(withDuration: 2.0, delay: 0, options: [], animations: {[weak self] in
         self?.pokView?.alpha = 1
-        self?.pokView?.frame.size.height *= 1.08
-        self?.pokView?.frame.size.width *= 1.08
+        self?.pokView?.frame.size.height *= 1
+        self?.pokView?.frame.size.width *= 1
         }, completion: nil)
         
-        UIView.animate(withDuration: 1.0, delay: 0, options: [], animations: {[weak self] in
+        UIView.animate(withDuration: 2.0, delay: 0, options: [], animations: {[weak self] in
         self?.lblText?.alpha = 1
-        self?.lblText?.frame.size.height *= 1.08
-        self?.lblText?.frame.size.width *= 1.08
+        self?.lblText?.frame.size.height *= 1
+        self?.lblText?.frame.size.width *= 1
         }, completion: nil)
     }
 }

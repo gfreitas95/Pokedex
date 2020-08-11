@@ -15,12 +15,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var pokedex: Pokedex!
     var arrayPokemon: Array<Pokemon> = []
       
-    @IBOutlet var weightProgress: UIProgressView!
-    @IBOutlet var calmProgress: UIProgressView!
-    @IBOutlet var friendlyProgress: UIProgressView!
-    @IBOutlet var obedientProgress: UIProgressView!
-    @IBOutlet var collectionView: UICollectionView!
-      
+    @IBOutlet weak var weightProgress: UIProgressView?
+    @IBOutlet weak var calmProgress: UIProgressView?
+    @IBOutlet weak var friendlyProgress: UIProgressView?
+    @IBOutlet weak var obedientProgress: UIProgressView?
+    @IBOutlet weak var collectionView: UICollectionView!
+    
       
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -100,7 +100,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             
             self.present(moreInfoView, animated: true, completion: nil)
         } else {
-            // Fallback on earlier versions
+            
         }
     }
 }
