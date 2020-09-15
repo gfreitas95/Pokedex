@@ -79,8 +79,8 @@
 		EC3B5FB424E2044B00628B5A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EC3B5FB524E2048F00628B5A /* MoreInfoViewController.swift */,
 				EC5F86FF24D4D887008CE403 /* ViewController.swift */,
+				EC3B5FB524E2048F00628B5A /* MoreInfoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -107,16 +107,24 @@
 			isa = PBXGroup;
 			children = (
 				EC3B5FB324E203A700628B5A /* Delegates */,
+				EC6FE113251038520090EABF /* Storyboards */,
 				ECC3FBD924E33DD40016759A /* Cell */,
 				ECC3FBDA24E33E020016759A /* Class */,
 				ECC3FBDB24E33E090016759A /* Entities */,
 				EC3B5FB424E2044B00628B5A /* Controllers */,
 				EC5F870424D4D889008CE403 /* Assets.xcassets */,
-				EC5F870124D4D887008CE403 /* Main.storyboard */,
-				EC5F870624D4D889008CE403 /* LaunchScreen.storyboard */,
 				EC5F870924D4D889008CE403 /* Info.plist */,
 			);
 			path = Pokedex;
+			sourceTree = "<group>";
+		};
+		EC6FE113251038520090EABF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EC5F870124D4D887008CE403 /* Main.storyboard */,
+				EC5F870624D4D889008CE403 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		ECC3FBD924E33DD40016759A /* Cell */ = {

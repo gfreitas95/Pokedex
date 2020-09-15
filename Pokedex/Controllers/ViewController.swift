@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Foundation
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
       
@@ -28,26 +27,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         pokedex = Pokedex.init()
         arrayPokemon = pokedex.pokemon()
         collectionView?.reloadData()
-    }
-      
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-          
-    }
-      
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-          
-    }
-      
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-          
-    }
-      
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-          
     }
       
     // MARK: - UICollectionView Delegate / Datasource

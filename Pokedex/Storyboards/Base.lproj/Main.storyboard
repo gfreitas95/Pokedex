@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -20,11 +20,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0kJ-0W-DTc">
                                 <rect key="frame" x="15" y="114" width="384" height="250"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="IbU-kG-njr">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="IbU-kG-njr">
                                         <rect key="frame" x="183" y="0.0" width="201" height="250"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon Stats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dr-Qh-fqf">
-                                        <rect key="frame" x="24.999999999999986" y="60" width="210.66666666666663" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poke Stats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dr-Qh-fqf">
+                                        <rect key="frame" x="25" y="60" width="149" height="36"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -68,7 +68,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="IbU-kG-njr" secondAttribute="trailing" id="1a4-CU-lKc"/>
                                     <constraint firstAttribute="bottom" secondItem="tQP-XX-BNc" secondAttribute="bottom" constant="30" id="3za-cc-tgw"/>
@@ -100,7 +100,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Characteristics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgW-dK-toe">
                                 <rect key="frame" x="15" y="394" width="153" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PN7-ho-TnY">
@@ -195,10 +195,10 @@
                                 <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qeN-2M-Jid">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qeN-2M-Jid">
                                 <rect key="frame" x="0.0" y="650" width="414" height="246"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HVR-IM-8JX">
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HVR-IM-8JX">
                                     <size key="itemSize" width="263" height="229"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -206,13 +206,13 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PokCellId" reuseIdentifier="PokCellId" id="0eC-DI-ojv" customClass="PokCell" customModule="Pokedex" customModuleProvider="target">
-                                        <rect key="frame" x="75.666666666666671" y="0.0" width="263" height="229"/>
+                                        <rect key="frame" x="0.0" y="8.6666666666666661" width="263" height="229"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dhe-iB-FOq">
                                             <rect key="frame" x="0.0" y="0.0" width="263" height="229"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HSH-VW-I89">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snorlax" translatesAutoresizingMaskIntoConstraints="NO" id="HSH-VW-I89">
                                                     <rect key="frame" x="0.0" y="0.0" width="263" height="171"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="171" id="ObH-eA-Ttc"/>
@@ -270,7 +270,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="kAG-fS-sJ5" firstAttribute="leading" secondItem="TXR-fl-oOy" secondAttribute="trailing" constant="10" id="1dm-0y-ZjR"/>
                             <constraint firstItem="dAw-Zh-LXf" firstAttribute="leading" secondItem="PN7-ho-TnY" secondAttribute="trailing" constant="20" id="3hK-eR-SvK"/>
@@ -350,29 +350,29 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVF-ln-SmB">
-                                <rect key="frame" x="15" y="121" width="384" height="220"/>
+                                <rect key="frame" x="15" y="120.99999999999999" width="384" height="219.66666666666663"/>
                                 <string key="text">The Pokedex aims to show the future trainer of a little buddy, wich pokemon is perfectly suited to the ambient wich you find yourself. So helping you to make the perfect choice of wich little friend you will get. Hope you have a great experience with the app. Enjoy !</string>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
                                 <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="mjv-fJ-vLp">
-                                <rect key="frame" x="-47" y="341" width="461" height="648"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carvalho" translatesAutoresizingMaskIntoConstraints="NO" id="mjv-fJ-vLp">
+                                <rect key="frame" x="0.0" y="361" width="414" height="518"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="648" id="dfC-at-q1L"/>
-                                    <constraint firstAttribute="width" constant="461" id="pY6-GX-jb7"/>
+                                    <constraint firstAttribute="height" constant="518" id="Xgh-X9-AZI"/>
+                                    <constraint firstAttribute="width" constant="414" id="qSe-ou-ets"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mjv-fJ-vLp" firstAttribute="trailing" secondItem="hwz-nP-IB6" secondAttribute="trailing" id="1Zl-XK-vCi"/>
-                            <constraint firstItem="mjv-fJ-vLp" firstAttribute="leading" secondItem="9Nc-Yf-KWB" secondAttribute="leading" constant="-47" id="37a-Uy-ZYi"/>
-                            <constraint firstAttribute="bottom" secondItem="mjv-fJ-vLp" secondAttribute="bottom" constant="-93" id="4AM-yM-H3O"/>
                             <constraint firstItem="kVF-ln-SmB" firstAttribute="top" secondItem="jod-DH-SMs" secondAttribute="bottom" constant="30" id="CBz-em-PwL"/>
                             <constraint firstItem="jod-DH-SMs" firstAttribute="leading" secondItem="hwz-nP-IB6" secondAttribute="leading" constant="20" id="F7D-eB-CGH"/>
                             <constraint firstItem="kVF-ln-SmB" firstAttribute="leading" secondItem="hwz-nP-IB6" secondAttribute="leading" constant="15" id="NtB-Ou-9nq"/>
+                            <constraint firstItem="mjv-fJ-vLp" firstAttribute="trailing" secondItem="hwz-nP-IB6" secondAttribute="trailing" id="Sgp-oT-LHz"/>
                             <constraint firstItem="jod-DH-SMs" firstAttribute="top" secondItem="hwz-nP-IB6" secondAttribute="top" constant="20" id="iM7-pV-c9L"/>
+                            <constraint firstItem="mjv-fJ-vLp" firstAttribute="leading" secondItem="hwz-nP-IB6" secondAttribute="leading" id="mVC-ne-d8B"/>
+                            <constraint firstAttribute="bottom" secondItem="mjv-fJ-vLp" secondAttribute="bottom" constant="17" id="pDV-LH-2ef"/>
                             <constraint firstItem="hwz-nP-IB6" firstAttribute="trailing" secondItem="kVF-ln-SmB" secondAttribute="trailing" constant="15" id="v47-Zs-E8V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hwz-nP-IB6"/>
@@ -388,8 +388,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1" width="1683" height="1776"/>
-        <image name="2" width="768" height="1158"/>
         <image name="back" width="128" height="128"/>
+        <image name="carvalho" width="235" height="459"/>
+        <image name="pikachu" width="1200" height="1200"/>
+        <image name="snorlax" width="634" height="496"/>
     </resources>
 </document>

@@ -17,7 +17,7 @@ class PokCell: UICollectionViewCell {
     
     func loadUI(item: Pokemon) {
         
-        image?.kf.setImage(with: URL.init(string: item.imagePokemon!))
+        image?.image = item.imagePokemon
         lableSpeed?.text = item.speed
         lableOrigin?.text = item.origin
     }

@@ -6,11 +6,11 @@
 //  Copyright © 2020 Gustavo. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-struct Pokemon: Codable {
-    
-    var imagePokemon: String?
+struct Pokemon {
+
+    var imagePokemon: UIImage
     var speed: String?
     var origin: String?
     var weight: Float!
