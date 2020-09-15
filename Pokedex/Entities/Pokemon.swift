@@ -10,11 +10,14 @@ import UIKit
 
 struct Pokemon {
 
-    var imagePokemon: UIImage
-    var speed: String?
-    var origin: String?
-    var weight: Float!
-    var calmFrantic: Float!
-    var friendly: Float!
-    var obedient: Float!
+    var pokeImage:UIImage
+    var name: String
+    var type: String
+    var Abilities: String
+    var Category: String
+    var Weaknesses: String
+    var weight: Float
+    var height: Float
+    var friendly: Float
+    var obedient: Float
 }

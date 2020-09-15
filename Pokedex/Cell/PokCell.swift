@@ -7,18 +7,20 @@
 //
 
 import UIKit
-import Kingfisher
 
 class PokCell: UICollectionViewCell {
     
-    @IBOutlet var image: UIImageView?
-    @IBOutlet var lableSpeed: UILabel?
-    @IBOutlet var lableOrigin: UILabel?
+    @IBOutlet weak var image: UIImageView?
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblType: UILabel!
+    @IBOutlet weak var view: UIView!
+    @IBOutlet weak var content: UIView!
     
+
     func loadUI(item: Pokemon) {
         
-        image?.image = item.imagePokemon
-        lableSpeed?.text = item.speed
-        lableOrigin?.text = item.origin
+        image?.image = item.pokeImage
+        lblName?.text = item.name
+        lblType?.text = item.type
     }
 }

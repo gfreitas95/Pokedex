@@ -13,18 +13,10 @@ class MoreInfoViewController: UIViewController {
     @IBOutlet var pokView: UIView?
     @IBOutlet var lblText: UILabel?
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         showForm()
     }
-    
 
     @IBAction func backToHome() {
         self.dismiss(animated: true, completion: nil)

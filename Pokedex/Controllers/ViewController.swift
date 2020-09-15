@@ -15,7 +15,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var arrayPokemon: Array<Pokemon> = []
       
     @IBOutlet weak var weightProgress: UIProgressView?
-    @IBOutlet weak var calmProgress: UIProgressView?
+    @IBOutlet weak var heightProgress: UIProgressView?
     @IBOutlet weak var friendlyProgress: UIProgressView?
     @IBOutlet weak var obedientProgress: UIProgressView?
     @IBOutlet weak var collectionView: UICollectionView!
@@ -24,9 +24,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
           
+        collectionView?.reloadData()
+        collectionView.delegate = self
+        collectionView.dataSource = self
         pokedex = Pokedex.init()
         arrayPokemon = pokedex.pokemon()
-        collectionView?.reloadData()
     }
       
     // MARK: - UICollectionView Delegate / Datasource
@@ -49,13 +51,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let friendSelect = arrayPokemon[indexPath.item]
     
         weightProgress?.setProgress(friendSelect.weight, animated: true)
-        calmProgress?.setProgress(friendSelect.calmFrantic, animated: true)
+        heightProgress?.setProgress(friendSelect.height, animated: true)
         friendlyProgress?.setProgress(friendSelect.friendly, animated: true)
         obedientProgress?.setProgress(friendSelect.obedient, animated: true)
     }
       
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize.init(width: 200, height: 200)
+        return CGSize(width: 200, height: 200)
     }
       
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -79,7 +81,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             
             self.present(moreInfoView, animated: true, completion: nil)
         } else {
-            
+            let storyboard = UIStoryboard(name: "MoreInfoView", bundle: nil)
+            let moreInfoView = storyboard.instantiateViewController(withIdentifier: "MoreInfoView")
+            self.present(moreInfoView, animated: true)
         }
     }
 }
