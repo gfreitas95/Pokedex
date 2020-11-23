@@ -13,9 +13,5 @@ The Pokedex is a app to help future owners of the Pokemon to make the right deci
 
 - UICollectionView
 
-# Pods
-
-- Kingfisher
-
 # Authors
 - Gustavo Freitas
